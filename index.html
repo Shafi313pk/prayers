@@ -46,7 +46,7 @@
     <nav id="full-menu" class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
       <div class="col-10 container-fluid">
         <!-- logo -->
-        <a class="navbar-brand" href="#"><img class="d-inline-block aligh-top" id="menu-logo" src="./images/black.webp"
+        <a class="navbar-brand" href="index.html"><img class="d-inline-block aligh-top" id="menu-logo" src="./images/black.webp"
             alt="prayer time logo" /></a>
         <!-- Button which will appear on small screen -->
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -62,32 +62,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" id="anchorFormat" href="./pages/prayer-times-for-country.html">Prayer Times</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" id="anchorFormat" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Ramadan
-              </a>
-              <ul class="dropdown-menu" id="dropdownChange">
-                <li>
-                  <a class="dropdown-item" href="./pages/Ramadan-kareem.html">Ramadan Kareem 2023</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/Ramadan-Prayer-timinng.html">Ramadan Prayers Timing</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/Ramadan-fasting-timing.html">Ramadan Fasting Timing</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/Ramadan-Full-Calender.html">Download full Month Calender</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="anchorFormat" href="./pages/Hijri-Date.html">Hijri Date</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="anchorFormat" href="./pages/Blog.html">Blog</a>
@@ -137,8 +111,8 @@
         </div>
         <p>Monday 22 Rajab 1444 Hijri - 2023/02/13</p>
         <div>
-          <div class="summary local"><span>Time in Mecca :</span>
-            <time id="timenowinthecity" class="fw-bold"><span>10:49:01 AM</span></time>
+          <div class="summary local"><span>Time in Jeddah :</span>
+            <time id="timeInJeddahNow" class="fw-bold"><span>10:49:01 AM</span></time>
           </div>
         </div>
       </div>
@@ -157,9 +131,9 @@
         </div>
 
         <div class="col-md-3 remainingTime">
-          <div class="nextPlayerName">Jeddah</div>
-          <div id="countdown">0:22:59</div>
-          <div class="summary">Local Time</div>
+          <div class="nextPlayerName">Makkah</div>
+          <div id="countdown"><span id="timeInMakkahNow">0:22:59</span></div>
+          <div class="summary">Current Time</div>
         </div>
 
       </div>
@@ -199,6 +173,18 @@
           <div class="temp">Isha</div>
         </li>
       </ul>
+
+      <div class="city-detail">
+        <h2>Quick recape : Prayer times in Jeddah</h2>
+        <p>Prayer times in
+            <strong>Jeddah</strong>
+            today begin at
+            <strong>4:54 AM</strong>
+            AM with the Fajr prayer and end at
+            <strong>7:04 PM</strong>
+            with the Isha prayer. Fasting today will last 12 hours and 40 minutes. In Qatif
+            City, the next prayer is Asr at 3:09 PM.</p>
+    </div>
     </div>
 
     <!-- Near by cities distance -->
@@ -806,7 +792,7 @@
     </div>
   <!-- End Footer -->
   
-  <script src="./scripts/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
