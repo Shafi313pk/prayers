@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- no index meta tag -->
+    <meta name="”robots”" content="”noindex”">
+
+    <!-- title -->
+    <title>City</title>
+
+    <!-- use for media query response -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.webp" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap css sheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Main CSS File -->
+    <link href="../css/style-prayer-for-city.css" rel="stylesheet" />
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/333b95c1fa.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <!-- ====== Header ====== -->
+    <header>
+        <nav id="full-menu" class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+            <div class="col-10 container-fluid">
+                <!-- logo -->
+                <a class="navbar-brand" href="../index.html"><img class="d-inline-block aligh-top" id="menu-logo"
+                        src="../images/black.webp" alt="prayer time logo" /></a>
+                <!-- Button which will appear on small screen -->
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <!-- below is our menu-pages -->
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="anchorFormat" aria-current="page"
+                                href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="anchorFormat" href="../pages/prayer-times-for-country.html">Prayer
+                                Times</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="anchorFormat" href="../pages/Blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="anchorFormat" href="../pages/Contact-Us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <button id="arabic-toggler" class="btn">العربية | AR</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ===== Hero Section ===== -->
+    <section class="container">
+        <!-- Main city Prayer times and Azan -->
+        <div class="hero-part todayPrayerDetails">
+            <div>
+                <h1>Qatif Prayer times and Azan</h1>
+            </div>
+            <div class="row">
+                <div class="col-md pTable no-margin-bottom">
+                    <Table class="table table-bordered table-light">
+                        <thead>
+                            <div class="col-md currentTime-city">
+                                <div>Dhuhr</div>
+                                <div id="countdown">00:39:56</div>
+                                <div>Current Prayer</div>
+                            </div>
+                        </thead>
+                    </Table>
+                </div>
+                <div class="col-md pTable no-margin-bottom">
+                    <Table class="table table-bordered table-light">
+                        <thead>
+                            <div class="col-md reminingTime">
+                                <div>Next Prayer</div>
+                                <div id="countdown">00:39:56</div>
+                                <div>Asr</div>
+                            </div>
+                        </thead>
+                    </Table>
+                </div>
+            </div>
+            <div class="city-detail">
+                <h2>Prayer times in Qatif, Saudi Arabia</h2>
+                <p>Prayer times in
+                    <strong>Qatif</strong>
+                    today begin at
+                    <strong>4:54 AM</strong>
+                    AM with the Fajr prayer and end at
+                    <strong>7:04 PM</strong>
+                    with the Isha prayer. Fasting today will last 12 hours and 40 minutes. In Qatif
+                    City, the next prayer is Asr at 3:09 PM.</p>
+            </div>
+            <div class="row todayPrayerTimes">
+                <div class="col-md pTable no-margin-bottom">
+                    <table class="table table-bordered table-light">
+                        <thead>
+                            <tr>
+                                <th id="firstThSize">
+                                    Prayer</th>
+                                <th itemprop="alternativeHeadline">
+                                    Azam Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="prayerbody">
+                            <tr>
+                                <th itemprop="keywords">
+                                    Fajr
+                                </th>
+                                <td>
+                                    4:54 AM</td>
+                            </tr>
+                            <tr>
+                                <th itemprop="keywords">
+                                    Sunrise
+                                </th>
+                                <td>
+                                    4:54 AM</td>
+                            </tr>
+                            <tr>
+                                <th itemprop="keywords">
+                                    Dhuhr
+                                </th>
+                                <td>
+                                    4:54 AM</td>
+                            </tr>
+                            <tr>
+                                <th itemprop="keywords">
+                                    Asr
+                                </th>
+                                <td>
+                                    4:54 AM</td>
+                            </tr>
+                            <tr>
+                                <th itemprop="keywords">
+                                    Maghrib
+                                </th>
+                                <td>
+                                    4:54 AM</td>
+                            </tr>
+                            <tr>
+                                <th itemprop="keywords">
+                                    Isha
+                                </th>
+                                <td>
+                                    4:54 AM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md pTable no-margin-bottom" id="nextPrayer400">
+                    <table class="table table-bordered table-light">
+                        <thead>
+                            <tr>
+                                <th id="firstThSize">
+                                    Name</th>
+                                <th itemprop="alternativeHeadline">
+                                    Info</th>
+                            </tr>
+                        </thead>
+                        <tbody id="prayerbody">
+                            <tr>
+                                <th itemprop="keywords">
+                                    Location
+                                </th>
+                                <td>
+                                    Saudi Arabia, Qatif</td>
+                            </tr>
+                            <tr>
+                                <th itemprop="keywords">
+                                    Next Prayer
+                                </th>
+                                <td>
+                                    Asr</td>
+                            </tr>
+                            <tr>
+                                <th itemprop="keywords">
+                                    Hijri Date
+                                </th>
+                                <td>
+                                    27 Rajab 1444</td>
+                            </tr>
+                            <tr>
+                                <th itemprop="keywords">
+                                    Date
+                                </th>
+                                <td>
+                                    18 February 2023</td>
+                            </tr>
+                            <tr>
+                                <th itemprop="keywords">
+                                    Day
+                                </th>
+                                <td>
+                                    Saturday</td>
+                            </tr>
+                            <tr>
+                                <th itemprop="keywords">
+                                    Time Zone
+                                </th>
+                                <td>
+                                    Asia/Riyadh
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+        <!-- Prayer Times for the next 10 days -->
+        <div class="hero-part nextTenDays">
+            <h3 itemprop="about">Prayer Times for the next 10 days</h3>
+            <div class="col-lg-12 pTable no-margin-bottom">
+                <table class="table table-bordered table-light">
+                    <thead>
+                        <tr>
+                            <th id="firstThSize">
+                                Date</th>
+                            <th itemprop="alternativeHeadline">
+                                Fajr</th>
+                            <th itemprop="alternativeHeadline">
+                                Sunrise</th>
+                            <th id="DisplayNone767" itemprop="alternativeHeadline">
+                                Dhuhr</th>
+                            <th itemprop="alternativeHeadline">
+                                Asr</th>
+                            <th itemprop="alternativeHeadline">
+                                Maghrib</th>
+                            <th id="DisplayNone767" itemprop="alternativeHeadline">
+                                Isha</th>
+                        </tr>
+                    </thead>
+                    <tbody id="prayerbody">
+                        <tr>
+                            <th itemprop="keywords">
+                                18 Sat</th>
+                            <td>4:54 AM</td>
+                            <td>6:14 AM</td>
+                            <td id="DisplayNone767">11:54 AM</td>
+                            <td>3:09 PM</td>
+                            <td>5:34 PM</td>
+                            <td id="DisplayNone767">7:04 PM</td>
+                        </tr>
+                        <tr>
+                            <th itemprop="keywords">
+                                19 Sun</th>
+                            <td>4:54 AM</td>
+                            <td>6:14 AM</td>
+                            <td id="DisplayNone767">11:54 AM</td>
+                            <td>3:09 PM</td>
+                            <td>5:34 PM</td>
+                            <td id="DisplayNone767">7:04 PM</td>
+                        </tr>
+                        <tr>
+                            <th itemprop="keywords">
+                                20 Mon</th>
+                            <td>4:54 AM</td>
+                            <td>6:14 AM</td>
+                            <td id="DisplayNone767">11:54 AM</td>
+                            <td>3:09 PM</td>
+                            <td>5:34 PM</td>
+                            <td id="DisplayNone767">7:04 PM</td>
+                        </tr>
+                        <tr>
+                            <th itemprop="keywords">
+                                21 Tue</th>
+                            <td>4:54 AM</td>
+                            <td>6:14 AM</td>
+                            <td id="DisplayNone767">11:54 AM</td>
+                            <td>3:09 PM</td>
+                            <td>5:34 PM</td>
+                            <td id="DisplayNone767">7:04 PM</td>
+                        </tr>
+                        <tr>
+                            <th itemprop="keywords">
+                                22 Wed</th>
+                            <td>4:54 AM</td>
+                            <td>6:14 AM</td>
+                            <td id="DisplayNone767">11:54 AM</td>
+                            <td>3:09 PM</td>
+                            <td>5:34 PM</td>
+                            <td id="DisplayNone767">7:04 PM</td>
+                        </tr>
+                        <tr>
+                            <th itemprop="keywords">
+                                23 Thur</th>
+                            <td>4:54 AM</td>
+                            <td>6:14 AM</td>
+                            <td id="DisplayNone767">11:54 AM</td>
+                            <td>3:09 PM</td>
+                            <td>5:34 PM</td>
+                            <td id="DisplayNone767">7:04 PM</td>
+                        </tr>
+                        <tr>
+                            <th itemprop="keywords">
+                                24 Fri</th>
+                            <td>4:54 AM</td>
+                            <td>6:14 AM</td>
+                            <td id="DisplayNone767">11:54 AM</td>
+                            <td>3:09 PM</td>
+                            <td>5:34 PM</td>
+                            <td id="DisplayNone767">7:04 PM</td>
+                        </tr>
+                        <tr>
+                            <th itemprop="keywords">
+                                25 Sat</th>
+                            <td>4:54 AM</td>
+                            <td>6:14 AM</td>
+                            <td id="DisplayNone767">11:54 AM</td>
+                            <td>3:09 PM</td>
+                            <td>5:34 PM</td>
+                            <td id="DisplayNone767">7:04 PM</td>
+                        </tr>
+                        <tr>
+                            <th itemprop="keywords">
+                                26 Sun</th>
+                            <td>4:54 AM</td>
+                            <td>6:14 AM</td>
+                            <td id="DisplayNone767">11:54 AM</td>
+                            <td>3:09 PM</td>
+                            <td>5:34 PM</td>
+                            <td id="DisplayNone767">7:04 PM</td>
+                        </tr>
+                        <tr>
+                            <th itemprop="keywords">
+                                27 Mon</th>
+                            <td>4:54 AM</td>
+                            <td>6:14 AM</td>
+                            <td id="DisplayNone767">11:54 AM</td>
+                            <td>3:09 PM</td>
+                            <td>5:34 PM</td>
+                            <td id="DisplayNone767">7:04 PM</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Today hijri date in Saudi Arabia -->
+        <div class="hero-part">
+            <h3>Today hijri date in Saudi Arabia</h3>
+            <p>
+                <a href="//mySiteName.com/en/hijri-date-in-saudi-arabia.html" title="Today Hijri date in Saudi Arabia">
+                    Saturday 27 Rajab 1444 Hijri</a>
+            </p>
+        </div>
+
+        <!-- Prayer times for cities in Saudi Arabia -->
+        <div class="hero-part">
+            <h3>Prayer times for cities in Saudi Arabia</h3>
+            <ul class="lithird">
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-abha.html" title="Prayer times in Abha city">Abha</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-dammam.html"
+                        title="Prayer times in Dammam city">Dammam</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-aflaj.html"
+                        title="Prayer times in Aflaj city">Aflaj</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-ahsa.html" title="Prayer times in Ahsa city">Ahsa</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-jawf.html" title="Prayer times in Al jawf city">Al
+                        jawf</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-kharj.html" title="Prayer times in Al kharj city">Al
+                        kharj</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-madinah.html"
+                        title="Prayer times in Al madinah city">Al madinah</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-qaysumah.html"
+                        title="Prayer times in Al qaysumah city">Al qaysumah</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-nimas.html" title="Prayer times in Al nimas city">Al
+                        nimas</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-riyadh.html"
+                        title="Prayer times in Riyadh city">Riyadh</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-buraidah.html"
+                        title="Prayer times in Buraidah city">Buraidah</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-jaizan.html"
+                        title="Prayer times in Jaizan city">Jaizan</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-jeddah.html"
+                        title="Prayer times in Jeddah city">Jeddah</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-khamis-mushait.html"
+                        title="Prayer times in Khamis mushait city">Khamis mushait</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-lith.html" title="Prayer times in Lith city">Lith</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-makkah.html"
+                        title="Prayer times in Makkah city">Makkah</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-najran.html"
+                        title="Prayer times in Najran city">Najran</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-hafr-albatin.html"
+                        title="Prayer times in Hafr albatin city">Hafr albatin</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-sultanah.html"
+                        title="Prayer times in Sultanah city">Sultanah</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-taif.html" title="Prayer times in Taif city">Taif</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-buraydah.html"
+                        title="Prayer times in Buraydah city">Buraydah</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-hufuf.html" title="Prayer times in Al hufuf city">Al
+                        hufuf</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-mubarraz.html"
+                        title="Prayer times in Al mubarraz city">Al mubarraz</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-hayil.html"
+                        title="Prayer times in Hayil city">Hayil</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-jubayl.html"
+                        title="Prayer times in Al jubayl city">Al jubayl</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-yanbual-bahr.html"
+                        title="Prayer times in Yanbual bahr city">Yanbual bahr</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-khobar.html"
+                        title="Prayer times in Khobar city">Khobar</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-unaizah.html"
+                        title="Prayer times in Unaizah city">Unaizah</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-arar.html" title="Prayer times in arar city">arar</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-sakaka.html"
+                        title="Prayer times in Sakaka city">Sakaka</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-qurayyat.html"
+                        title="Prayer times in Al qurayyat city">Al qurayyat</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-dhahran.html"
+                        title="Prayer times in Dhahran city">Dhahran</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-qatif.html" title="Prayer times in Al qatif city">Al
+                        qatif</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-baha.html" title="Prayer times in Al baha city">Al
+                        baha</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-ar-rass.html" title="Prayer times in Ar rass city">Ar
+                        rass</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-sayhat.html"
+                        title="Prayer times in Sayhat city">Sayhat</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-mithnab.html"
+                        title="Prayer times in Al mithnab city">Al mithnab</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-khafji.html"
+                        title="Prayer times in Al khafji city">Al khafji</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-ad-dawadimi.html"
+                        title="Prayer times in Ad dawadimi city">Ad dawadimi</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-az-zulfi.html" title="Prayer times in Az zulfi city">Az
+                        zulfi</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-ad-dahis.html" title="Prayer times in Ad dahis city">Ad
+                        dahis</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-ahl-muhammad.html"
+                        title="Prayer times in Ahl muhammad city">Ahl muhammad</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-al-maghal.html"
+                        title="Prayer times in Al maghal city">Al maghal</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-jallal.html"
+                        title="Prayer times in Jallal city">Jallal</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-abu-hadriya.html"
+                        title="Prayer times in Abu hadriya city">Abu hadriya</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-abi-arish.html"
+                        title="Prayer times in Abi arish city">Abi arish</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-abyar-ali.html"
+                        title="Prayer times in Abyar ali city">Abyar ali</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-uthaythiyah.html"
+                        title="Prayer times in Uthaythiyah city">Uthaythiyah</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-ahad-al-masarihah.html"
+                        title="Prayer times in Ahad al masarihah city">Ahad al masarihah</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-adhaim.html"
+                        title="Prayer times in Adhaim city">Adhaim</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-uaywij.html"
+                        title="Prayer times in Uaywij city">Uaywij</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-bilad-mashwal.html"
+                        title="Prayer times in Bilad mashwal city">Bilad mashwal</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-umm-athlah.html"
+                        title="Prayer times in Umm athlah city">Umm athlah</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-umm-al-jamajim.html"
+                        title="Prayer times in Umm al jamajim city">Umm al jamajim</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-umm-kharaq.html"
+                        title="Prayer times in Umm kharaq city">Umm kharaq</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-umm-rubayah.html"
+                        title="Prayer times in Umm rubayah city">Umm rubayah</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-umm-rujum.html"
+                        title="Prayer times in Umm rujum city">Umm rujum</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-umm-radamah.html"
+                        title="Prayer times in Umm radamah city">Umm radamah</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-umm-dharb.html"
+                        title="Prayer times in Umm dharb city">Umm dharb</a>
+                </li>
+                <li>
+                    <a href="//mySiteName.com/en/prayer-times-in-umm-sarahah.html"
+                        title="Prayer times in Umm sarahah city">Umm sarahah</a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+            <div class="listurls">
+                <a href="//mySiteName.com/en/prayer-times-cities-saudi-arabia.html">More of Saudi Arabia cities</a>
+            </div>
+        </div>
+
+        <!-- Search prayer time on the bottom-->
+        <div class="hero-part search-bar">
+            <h2>Search Prayer times</h2>
+            <div class="searchBlock">
+                <form class="searchform" method="get" action="//city-outPut.html">
+                    <input type="search" name="q" id="q" placeholder="Search Your City ..." autocomplete="off" /><br />
+                    <button type="submit" class="search-city" onclick="searchLocation();return false;">
+                        Search!
+                    </button>
+                    <button type="button" class="myLocation" onclick="myLocation()">
+                        Get My Location
+                    </button>
+                </form>
+            </div>
+            <div id="resultLocation"></div>
+        </div>
+
+    </section>
+
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <img src="../images/white.webp" alt="Prayer Logo image" class="footer-logo">
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul class="links">
+                    <li>
+                        <a href="../pages/Privacy-Policy.html">Privay Policy</a>
+                    </li>
+                    <li>
+                        <a href="../pages/Disclaimer.html">Discalimer</a>
+                    </li>
+                    <li>
+                        <a href="../pages/Terms-Conditions.html">terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="../pages/About-ads.html">About Ads</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">Pakistan, KPK, swabi, Baja</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours: From 10:00 To 18:00</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>+92-3333498937</span>
+                        <span>+966-568407707</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box footer-gallery">
+                <img src="../images/Nisah-103.webp" alt="Sora Nisah Ayah # 103" />
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023. All rights reserved.</p>
+    </div>
+    <!-- End Footer -->
+
+    <!-- this is use in js -->
+    <div id="hashSpace"></div>
+    <script src="prayer-for-city.js"></script>
+</body>
+
+</html>

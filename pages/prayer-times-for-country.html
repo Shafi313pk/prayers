@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- no index meta tag -->
+    <meta name="”robots”" content="”noindex”">
+
+    <!-- title -->
+    <title>Prayer Times for Country</title>
+
+    <!-- use for media query response -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.webp" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap css sheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Main CSS File -->
+    <link href="../css/style-for-single-pages.css" rel="stylesheet" />
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/333b95c1fa.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <!-- ====== Header ====== -->
+    <header>
+        <nav id="full-menu" class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+            <div class="col-10 container-fluid">
+                <!-- logo -->
+                <a class="navbar-brand" href="../index.html"><img class="d-inline-block aligh-top" id="menu-logo"
+                        src="../images/black.webp" alt="prayer time logo" /></a>
+                <!-- Button which will appear on small screen -->
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <!-- below is our menu-pages -->
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="anchorFormat" aria-current="page"
+                                href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="anchorFormat" href="../pages/prayer-times-for-country.html">Prayer
+                                Times</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="anchorFormat" href="../pages/Blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="anchorFormat" href="../pages/Contact-Us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <button id="arabic-toggler" class="btn">العربية | AR</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ===== Hero Section ===== -->
+    <section class="container">
+
+        <!-- div 1 -->
+
+        <div class="hero-part search-bar">
+            <h1>Search Prayer times</h1>
+            <div class="searchBlock">
+                <form class="searchform" method="get" action="//city-outPut.html">
+                    <input type="search" name="q" id="q" placeholder="Search Your City ..." autocomplete="off" /><br />
+                    <button type="submit" class="search-city" onclick="searchLocation();return false;">
+                        Search!
+                    </button>
+                    <button type="button" class="myLocation" onclick="myLocation()">
+                        Get My Location
+                    </button>
+                </form>
+            </div>
+            <div id="resultLocation"></div>
+        </div>
+        <!-- country list-->
+        <div class="hero-part country-list-page">
+            <h1>Prayer Times for Country</h1>
+
+            <!-- country with flags -->
+            <div class="makeItCenter">
+                <!-- to center the data -->
+                <div class="row">
+
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Pakistan</h5>
+                            <img src="../images/flag/Pakistan.webp" alt="Prayer times for Pakistan">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="">
+                            <h5>Saudi Arabia</h5>
+                            <img src="../images/flag/Saudi_Arabia.webp" alt="Prayer times for Saudi Arabia">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Yemen</h5>
+                            <img src="../images/flag/Yemen.webp" alt="Prayer times for Yemen">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Palestine</h5>
+                            <img src="../images/flag/Palestine.webp" alt="Prayer times for Palestine">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Turkey</h5>
+                            <img src="../images/flag/Turkey.webp" alt="Prayer times for Turkey">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Emirates</h5>
+                            <img src="../images/flag/United_Arab_Emirates.webp" alt="Prayer times for United Emirates">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Iraq</h5>
+                            <img src="../images/flag/Iraq.webp" alt="Prayer times for Iraq">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Qatar</h5>
+                            <img src="../images/flag/Qatar.webp" alt="Prayer times for Qatar">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Syria</h5>
+                            <img src="../images/flag/Syria.webp" alt="Prayer times for Syria">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Libya</h5>
+                            <img src="../images/flag/Libya.webp" alt="Prayer times for Libya">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Jordan</h5>
+                            <img src="../images/flag/Jordan.webp" alt="Prayer times for Jordan">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>India</h5>
+                            <img src="../images/flag/India.webp" alt="Prayer times for India">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Morocco</h5>
+                            <img src="../images/flag/Morocco.webp" alt="Prayer times for Morocco">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Algeria</h5>
+                            <img src="../images/flag/Algeria.webp" alt="Prayer times for Algeria">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Lebanon</h5>
+                            <img src="../images/flag/Lebanon.webp" alt="Prayer times for Lebanon">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Tunisia</h5>
+                            <img src="../images/flag/Tunisia.webp" alt="Prayer times for Tunisia">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Kuwait</h5>
+                            <img src="../images/flag/Kuwait.webp" alt="Prayer times for Kuwait">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Oman</h5>
+                            <img src="../images/flag/Oman.webp" alt="Prayer times for Oman">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Sudan</h5>
+                            <img src="../images/flag/Sudan.webp" alt="Prayer times for Sudan">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>United States</h5>
+                            <img src="../images/flag/United_States.webp" alt="Prayer times for United States">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Iran</h5>
+                            <img src="../images/flag/Iran.webp" alt="Prayer times for Iran">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>U K
+                            </h5>
+                            <img src="../images/flag/United_Kingdom.webp" alt="Prayer times for United Kingdom">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Indonesia</h5>
+                            <img src="../images/flag/Indonesia.webp" alt="Prayer times for Indonesia">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Philippines</h5>
+                            <img src="../images/flag/Philippines.webp" alt="Prayer times for Philippines">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Malaysia</h5>
+                            <img src="../images/flag/Malaysia.webp" alt="Prayer times for Malaysia">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Canada</h5>
+                            <img src="../images/flag/Canada.webp" alt="Prayer times for Canada">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>China</h5>
+                            <img src="../images/flag/China.webp" alt="Prayer times for China">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Norway</h5>
+                            <img src="../images/flag/Norway.webp" alt="Prayer times for Norway ">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Spain</h5>
+                            <img src="../images/flag/Spain.webp" alt="Prayer times for Spain">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Kazakhstan</h5>
+                            <img src="../images/flag/Kazakhstan.webp" alt="Prayer times for Kazakhstan">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Bangladesh</h5>
+                            <img src="../images/flag/bangladesh.webp" alt="Prayer times for Bangladesh">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Afghanistan</h5>
+                            <img src="../images/flag/Afghanistan.webp" alt="Prayer times for Afghanistan">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Germany</h5>
+                            <img src="../images/flag/Germany.webp" alt="Prayer times for Germany">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Egypt</h5>
+                            <img src="../images/flag/Egypt.webp" alt="Prayer times for Egypt">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Russia</h5>
+                            <img src="../images/flag/Russia.webp" alt="Prayer times for Russia">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Mauritania</h5>
+                            <img src="../images/flag/Mauritania.webp" alt="Prayer times for Mauritania">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>France</h5>
+                            <img src="../images/flag/France.webp" alt="Prayer times for France">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Japan</h5>
+                            <img src="../images/flag/Japan.webp" alt="Prayer times for Japan">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Italy</h5>
+                            <img src="../images/flag/Italy.webp" alt="Prayer times for Italy">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Sweden</h5>
+                            <img src="../images/flag/Sweden.webp" alt="Prayer times for Sweden">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Nigeria</h5>
+                            <img src="../images/flag/nigeria.webp" alt="Prayer times for Nigeria">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 pTable col-md-3 col-sm-5 col- country-with-flag">
+                        <a href="#">
+                            <h5>Bahrain</h5>
+                            <img src="../images/flag/Bahrain.webp" alt="Prayer times for Bahrain">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end country with flags -->
+
+        </div>
+
+    </section>
+
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <img src="../images/white.webp" alt="Prayer Logo image" class="footer-logo">
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul class="links">
+                    <li>
+                        <a href="../pages/Privacy-Policy.html">Privay Policy</a>
+                    </li>
+                    <li>
+                        <a href="../pages/Disclaimer.html">Discalimer</a>
+                    </li>
+                    <li>
+                        <a href="../pages/Terms-Conditions.html">terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="../pages/About-ads.html">About Ads</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">Pakistan, KPK, swabi, Baja</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours: From 10:00 To 18:00</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>+92-3333498937</span>
+                        <span>+966-568407707</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box footer-gallery">
+                <img src="../images/Nisah-103.webp" alt="Sora Nisah Ayah # 103" />
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023. All rights reserved.</p>
+    </div>
+    <!-- End Footer -->
+
+    <!-- this is use in js -->
+    <div id="hashSpace"></div>
+    <script src="prayer-for-city.js"></script>
+</body>
+
+</html>
