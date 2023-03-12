@@ -1,0 +1,106 @@
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: "poppins";
+    font-size: 16px;
+    color: #585858;
+    --main-color: #2196f3;
+    background-color: #f9ffff;
+}
+a {
+  text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 2px;
+}
+
+
+/* ===== Hero Section===== */
+section {
+  margin-top: 100px;
+}
+.hero-part{
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+
+time {
+  color: #ff5722;
+  font-family:'Open Sans', sans-serif;
+}
+
+
+
+.currentPrayer {
+  color: #e17ffd;
+}
+
+
+
+.todaynextprayer .col {
+  line-height: 1;
+  padding: 20px 10px;
+}
+.todaynextprayer .remainingTime {
+  background-color:#00A79D;
+  font-weight: 600;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+
+}
+.todaynextprayer .nextPlayerName {
+  font-size: 30px;
+  color: rgb(21, 52, 153);
+}
+.todaynextprayer .remainingTime #countdown {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family:'Open Sans', sans-serif;
+}
+.todayprayer {
+  padding: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+}
+
+.todayprayer .onprayer {
+  padding: 5px 0;
+  border: 1px solid #00A79D;
+  border-width: 5px 1px;
+  margin: 10px 5px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 79px;
+  flex: 1 1 79px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.todayprayer .nextprayer {
+  background-color: #edffdd !important;
+  font-weight: bold;
+}
+
+.todayprayer .icon {
+  margin: 5px auto 0;
+  display: block;
+}
+
